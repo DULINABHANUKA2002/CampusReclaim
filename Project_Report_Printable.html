@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusReclaim Project Report</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid #eee;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #003566;
+            border-bottom: 2px solid #00f5d4;
+            padding-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f8f9fa;
+        }
+
+        .success {
+            color: #01c1a7;
+            font-weight: bold;
+        }
+
+        .header-info {
+            background: #f0fdfa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Software Project Report – TICT 3153</h1>
+
+    <div class="header-info">
+        <p><strong>Project Title:</strong> CampusReclaim</p>
+        <p><strong>Prepared by:</strong> [Insert Your Name]</p>
+        <p><strong>Department / Faculty:</strong> [Insert Department Name]</p>
+        <p><strong>University Name:</strong> [Insert University Name]</p>
+        <p><strong>Submission Date:</strong> February 13, 2026</p>
+    </div>
+
+    <h2>1. Project Description</h2>
+    <p><strong>CampusReclaim</strong> is a modern, web-based lost and found management system specifically designed to
+        streamline the process of item recovery within university environments. In a bustling campus setting, students
+        frequently lose essential items like ID cards, electronics, and study materials, while finders often struggle to
+        locate the rightful owners.</p>
+    <p>The platform provides a centralized, secure, and intuitive portal where campus members can immediately report
+        lost items or list found belongings. It features a real-time, searchable "Public Feed" that allows users to
+        browse items by category and location. To ensure trust and security, the system incorporates a multi-role
+        authentication system where administrators can moderate reports and monitor community activity. By replacing
+        fragmented social media posts and physical notice boards with a structured digital ecosystem,
+        <strong>CampusReclaim</strong> significantly increases the success rate of item recovery and fosters a stronger
+        sense of community responsibility.
+    </p>
+
+    <h2>2. Objectives & Scope</h2>
+    <h3>Objectives:</h3>
+    <ul>
+        <li>Bridge the communication gap between students who lose items and those who find them.</li>
+        <li>Provide a centralized, searchable database for campus-wide lost and found activity.</li>
+        <li>Automate the status tracking of items from "Active" to "Resolved."</li>
+    </ul>
+    <h3>Scope:</h3>
+    <p>PHP-based web portal featuring user authentication, multi-role access (Admin/User), real-time search feed, and
+        image upload capabilities. Designed for responsive mobile and desktop use.</p>
+
+    <h2>3. Technology Stack</h2>
+    <ul>
+        <li><strong>Frontend:</strong> HTML5, CSS3 (Glassmorphism), Vanilla JavaScript (Custom SPA Router)</li>
+        <li><strong>Backend:</strong> PHP (RESTful APIs)</li>
+        <li><strong>Database:</strong> MySQL</li>
+        <li><strong>UI Assets:</strong> FontAwesome 6.4, Google Fonts (Outfit)</li>
+    </ul>
+
+    <h2>4. Features & Functionalities</h2>
+    <table>
+        <tr>
+            <th>Feature</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td><strong>Secure Auth</strong></td>
+            <td>Multi-role login system (User/Admin) with session management.</td>
+        </tr>
+        <tr>
+            <td><strong>Public Feed</strong></td>
+            <td>Searchable dashboard where users view all reported items.</td>
+        </tr>
+        <tr>
+            <td><strong>Item Reporting</strong></td>
+            <td>Form supporting image uploads, categorization, and location tagging.</td>
+        </tr>
+        <tr>
+            <td><strong>Analytics</strong></td>
+            <td>Visual representation of system impact and recovery rates.</td>
+        </tr>
+    </table>
+
+    <h2>5. UI/UX Screenshots</h2>
+    <p><em>(Please attach your screenshots here for the final submission)</em></p>
+
+    <h2>6. Challenges & Resolutions</h2>
+    <table>
+        <tr>
+            <th>Challenge</th>
+            <th>Resolution</th>
+        </tr>
+        <tr>
+            <td>Framework-less SPA</td>
+            <td>Developed a custom JavaScript router using hash fragments for seamless navigation.</td>
+        </tr>
+        <tr>
+            <td>Image Handling</td>
+            <td>Implemented server-side validation and hashing for secure file storage in PHP.</td>
+        </tr>
+        <tr>
+            <td><strong>Session Security</strong></td>
+            <td>Implemented strict PHP session checks to ensure users can only modify their own items.</td>
+        </tr>
+        <tr>
+            <td><strong>SQL Injection Prevention</strong></td>
+            <td>Utilized PDO Prepared Statements for all database interactions to ensure robust security.</td>
+        </tr>
+        <tr>
+            <td><strong>Responsive Design</strong></td>
+            <td>Adopted a Mobile-First approach with CSS Flexbox to maintain accessibility on small screens.</td>
+        </tr>
+        <tr>
+            <td><strong>State Management</strong></td>
+            <td>Used a centralized JavaScript state object to synchronize the UI without full page reloads.</td>
+        </tr>
+    </table>
+
+    <h2>7. Conclusion</h2>
+    <p>The <strong>CampusReclaim</strong> project successfully addresses the critical need for a structured and reliable
+        lost and found system within a university environment. By transitioning from informal, fragmented reporting
+        methods to a centralized digital platform, we have significantly streamlined the recovery process for students
+        and staff alike. Throughout the development of this full-stack application, key technical challenges—such as
+        multi-role authentication, responsive UI design using Glassmorphism, and secure file handling—were successfully
+        overcome. This project not only demonstrates the practical application of PHP, MySQL, and modern JavaScript but
+        also highlights the importance of user-centric design in solving community-level problems. Ultimately,
+        CampusReclaim fosters a more connected and responsible campus culture, providing a scalable foundation for
+        future improvements in campus management systems.</p>
+
+    <h2>8. Future Enhancements</h2>
+    <ul>
+        <li><strong>Real-time Notifications:</strong> Integration with WebSocket or push notification services to alert
+            users the moment a matching item is reported.</li>
+        <li><strong>AI-Powered Matching:</strong> Utilizing machine learning and image recognition algorithms to
+            automatically suggest potential matches between "Lost" and "Found" records based on visual features.</li>
+        <li><strong>GIS & Interactive Mapping:</strong> Implementation of a campus map interface where users can pin the
+            exact location where an item was lost or found for better spatial awareness.</li>
+        <li><strong>Reward & Gamification System:</strong> A system to acknowledge and reward honest finders with campus
+            credits or digital badges to encourage community participation.</li>
+        <li><strong>Multi-University Scaling:</strong> Expanding the database architecture to support multiple campuses
+            or universities within a single, unified network.</li>
+        <li><strong>In-App Messaging:</strong> A secure, anonymized chat system that allows finders and owners to
+            communicate and arrange handovers without sharing personal contact details.</li>
+    </ul>
+</body>
+
+</html>

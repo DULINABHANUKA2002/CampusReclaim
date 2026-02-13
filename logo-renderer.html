@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Renderer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #00f5d4;
+            --primary-dark: #01c1a7;
+            --bg-dark: #000814;
+        }
+        body {
+            background-color: var(--bg-dark);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Outfit', sans-serif;
+        }
+        .logo-container {
+            padding: 50px;
+            background: var(--bg-dark);
+            border-radius: 20px;
+        }
+        .logo {
+            font-size: 4rem; /* Larger for better quality */
+            font-weight: 700;
+            background: linear-gradient(to right, var(--primary), #ffffff, var(--primary-dark));
+            background-size: 200% auto;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            text-shadow: 0 0 30px rgba(0, 245, 212, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container" id="logo-target">
+        <div class="logo">
+            <i class="fa-solid fa-hands-holding-circle"></i> CampusReclaim
+        </div>
+    </div>
+</body>
+</html>

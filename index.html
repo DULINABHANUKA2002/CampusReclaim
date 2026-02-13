@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusReclaim | PHP Version</title>
+    <!-- Reusing same elegant CSS -->
+    <link rel="stylesheet" href="style.css?v=2.1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Navigation -->
+        <nav id="navbar" class="hidden">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fa-solid fa-hands-holding-circle"></i> CampusReclaim
+                </div>
+                <div class="nav-links">
+                    <button onclick="router.navigate('dashboard')" class="nav-btn active"><i
+                            class="fa-solid fa-house"></i> Home</button>
+                    <button onclick="router.navigate('my-items')" class="nav-btn"><i
+                            class="fa-solid fa-layer-group"></i> My Items</button>
+                    <button onclick="router.navigate('profile')" class="nav-btn"><i class="fa-solid fa-user-gear"></i>
+                        Profile</button>
+                    <button onclick="router.navigate('analytics')" class="nav-btn"><i
+                            class="fa-solid fa-chart-line"></i> Analytics</button>
+                    <button onclick="router.navigate('report')" class="nav-btn"><i class="fa-solid fa-circle-plus"></i>
+                        Report Item</button>
+                    <button onclick="auth.logout()" class="nav-btn logout"><i
+                            class="fa-solid fa-right-from-bracket"></i> Logout</button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main id="main-content"></main>
+    </div>
+
+    <div id="toast-container"></div>
+    <script src="script.js?v=5.0"></script>
+</body>
+
+</html>
